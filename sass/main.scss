@@ -1,0 +1,23 @@
+@import "./utils/veriables";
+@import "./utils/visually-hidden";
+@import "./base/common";
+@import "./base/container";
+
+// HEADER
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/header";
+
+// TITLE
+@import "./components/model";
+@import "./layout/title";
+@import "./layout/about";
+@import "./layout/doing";
+@import "./layout/team";
+@import "./layout/clients";
+
+// FOOTER
+
+@import "./components/footer";
+@import "./components/contacts";
+@import "./components/form";

@@ -1,0 +1,33 @@
+.contacts-list-link {
+  color: #757575;
+
+  &-map {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  &-map:hover,
+  &-map:focus,
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

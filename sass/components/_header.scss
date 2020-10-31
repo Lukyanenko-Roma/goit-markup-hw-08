@@ -1,0 +1,36 @@
+.header {
+  padding: 32px 0;
+
+  & .address {
+    margin-left: auto;
+  }
+}
+
+.address {
+  display: flex;
+  align-items: center;
+}
+.header-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+
+  &-link {
+    color: #757575;
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    color: $accent-color;
+  }
+  &:hover &-svg {
+    fill: #2196f3;
+  }
+  &-svg {
+    margin-right: 10px;
+  }
+}
