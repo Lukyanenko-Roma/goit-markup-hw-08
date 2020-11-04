@@ -5,10 +5,31 @@
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    margin-right: 93px;
+    margin-right: 88px;
     color: #212121;
   }
   &-color {
     color: #2196f3;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    &-header {
+      margin-right: 94px;
+    }
+  }
+}
+// .logo {
+//   &-header {
+//     font-family: Raleway;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.192;
+//     letter-spacing: 0.03em;
+//     margin-right: 93px;
+//     color: #212121;
+//   }
+//   &-color {
+//     color: #2196f3;
+//   }
+// }
