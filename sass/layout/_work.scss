@@ -9,7 +9,6 @@
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
-
     overflow: hidden;
   }
 
@@ -100,6 +99,8 @@
     position: relative;
     height: 294px;
   }
+}
+@media screen and (min-width: 480px) {
 }
 
 // .work-list {

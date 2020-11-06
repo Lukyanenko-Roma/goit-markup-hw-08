@@ -18,51 +18,53 @@
 
     <!--HEADER-->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
+    
           <a class="logo-header link" href="./index.html" lang="en">
-            <span class="logo-color"> Web</span>Studio</a
-          >
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./index.html">Контакты</a>
-            </li>
-          </ul>
-          <ul class="address list">
-            <li class="header-address">
-              <a
-                class="header-address-link link"
-                href="mailto:info@devstudio.com"
-
-              >
-
-                <svg class="header-address-svg" width="16px" height="12" px>
-                  <use href="./imags/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="header-address">
-              <a class="header-address-link link" href="tel:+380961111111">
-                <svg class="header-address-svg" width="10px" height="16px">
-                  <use href="./imags/sprite.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+    
+            <span class="logo-color"> Web</span>Studio</a>
+          <button type="button" class="header-btn is-open" aria-expanded="false" aria-controls="navigation-menu"
+            data-menu-button>
+            <svg class="header-btn-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="header-btn-burger" href="./imags/sprite.svg#burger"></use>
+              <use class="header-btn-close" href="./imags/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+          <div class="navigation-menu is-open" id="navigation-menu" data-menu>
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="./index.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="address list">
+              <li class="header-address">
+                <a class="header-address-link link" href="mailto:info@devstudio.com">
+                  <svg class="header-address-svg" width="16px" height="12" px>
+                    <use href="./imags/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a>
+              </li>
+              <li class="header-address">
+                <a class="header-address-link link" href="tel:+380961111111">
+                  <svg class="header-address-svg" width="10px" height="16px">
+                    <use href="./imags/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
-    </header> -->
+    
+    </header>
 
     <!-- CLICKS -->
 
@@ -93,9 +95,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio1-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio1-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio1-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio1-d.jpg 1x, ./images/portfolio/portfolio1-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio1-t.jpg 1x, ./images/portfolio/portfolio1-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio1-m.jpg 1x, ./images/portfolio/portfolio1-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio1-m.jpg" alt="Технокряк" />
                 </picture>
               <div class="work-overlay">
@@ -112,9 +114,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio2-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio2-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio2-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio2-d.jpg 1x, ./images/portfolio/portfolio2-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio2-t.jpg 1x, ./images/portfolio/portfolio2-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio2-m.jpg 1x, ./images/portfolio/portfolio2-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio2-m.jpg" alt="Постер New Orlean vs Golden Star" />
                 </picture>
                 
@@ -133,9 +135,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio3-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio3-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio3-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio3-d.jpg 1x, ./images/portfolio/portfolio3-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio3-t.jpg 1x, ./images/portfolio/portfolio3-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio3-m.jpg 1x, ./images/portfolio/portfolio3-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio3-m.jpg" alt="Ресторан Seafood" />
                 </picture>
             
@@ -153,9 +155,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio4-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio4-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio4-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio4-d.jpg 1x, ./images/portfolio/portfolio4-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio4-t.jpg 1x, ./images/portfolio/portfolio4-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio4-m.jpg 1x, ./images/portfolio/portfolio4-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio4-m.jpg" alt="Проект Prime" />
                 </picture>
               
@@ -173,9 +175,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio5-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio5-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio5-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio5-d.jpg 1x, ./images/portfolio/portfolio5-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio5-t.jpg 1x, ./images/portfolio/portfolio5-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio5-m.jpg 1x, ./images/portfolio/portfolio5-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio5-m.jpg" alt="Проект Boxes" />
                 </picture>
               
@@ -193,9 +195,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio6-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio6-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio6-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio6-d.jpg 1x, ./images/portfolio/portfolio6-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio6-t.jpg 1x, ./images/portfolio/portfolio6-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio6-m.jpg 1x, ./images/portfolio/portfolio6-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio6-m.jpg" alt="Inspiration has no Borders" />
                 </picture>
           
@@ -213,9 +215,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio7-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio7-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio7-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio7-d.jpg 1x, ./images/portfolio/portfolio7-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio7-t.jpg 1x, ./images/portfolio/portfolio7-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio7-m.jpg 1x, ./images/portfolio/portfolio7-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio7-m.jpg" alt="Издание Limited Edition" />
                 </picture>
             
@@ -233,9 +235,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio8-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio8-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio8-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio8-d.jpg 1x, ./images/portfolio/portfolio8-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio8-t.jpg 1x, ./images/portfolio/portfolio8-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio8-m.jpg 1x, ./images/portfolio/portfolio8-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio8-m.jpg" alt="Проект LAB" />
                 </picture>
             
@@ -253,9 +255,9 @@
             <a class="work-link link" href="#">
               <div class="work-overlay-img">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio9-d.jpg 1x, ./images/foto/foto4-d@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio9-t.jpg 1x, ./images/foto/foto4-t@2x.jpg 2x">
-                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio9-m.jpg 1x, ./images/foto/foto4-m@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./imags/portfolio/portfolio9-d.jpg 1x, ./images/portfolio/portfolio9-d@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./imags/portfolio/portfolio9-t.jpg 1x, ./images/portfolio/portfolio9-t@2x.jpg 2x">
+                  <source media="(min-width: 480px)" srcset="./imags/portfolio/portfolio9-m.jpg 1x, ./images/portfolio/portfolio9-m@2x.jpg 2x">
                   <img class="work-list-img" src="./imags/portfolio/portfolio9-m.jpg" alt="Growing Business" />
                 </picture>
               
@@ -275,9 +277,9 @@
 
     <!-- CONTACTS-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container-footer">
-        <div>
+        <div class="footer-logo">
           <a class="logo-footer link" href="./index.html" lang="en">
             <span class="logo-color"> Web</span>Studio</a
           >
@@ -352,6 +354,6 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

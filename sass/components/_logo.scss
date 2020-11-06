@@ -5,17 +5,24 @@
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    margin-right: 88px;
+    margin-right: 276px;
     color: #212121;
   }
   &-color {
     color: #2196f3;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     &-header {
-      margin-right: 94px;
+      margin-right: 93px;
     }
   }
 }
