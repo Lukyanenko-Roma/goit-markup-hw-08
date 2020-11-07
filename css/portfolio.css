@@ -70,8 +70,8 @@ a:visited {
 .logo-header {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   margin-right: 276px;
   color: #212121;
@@ -90,6 +90,8 @@ a:visited {
 @media screen and (min-width: 1200px) {
   .logo-header {
     margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
   }
 }
 
@@ -149,6 +151,7 @@ a:visited {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #fff;
+    z-index: 10;
   }
   .navigation-menu.is-open {
     display: block;
@@ -218,13 +221,14 @@ a:visited {
 
 .header-address {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.02em;
 }
 
 .header-address-link {
   display: flex;
+  align-items: center;
   color: #757575;
 }
 
@@ -236,11 +240,15 @@ a:visited {
   color: #2196f3;
 }
 
-.header-address:hover .header-address-svg {
+.header-address:hover .header-address-svg-mail {
   fill: #2196f3;
 }
 
-.header-address-svg {
+.header-address:hover .header-address-svg-tel {
+  fill: #2196f3;
+}
+
+.header-address-svg-mail, .header-address-svg-tel {
   margin-right: 8px;
 }
 
@@ -248,12 +256,35 @@ a:visited {
   .header-address:not(:last-child) {
     margin-bottom: 16px;
   }
+  .header-address {
+    font-size: 18px;
+    line-height: 1.166;
+  }
+  .header-address-link {
+    justify-content: center;
+  }
+  .header-address-svg-tel {
+    width: 10px;
+    height: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .address {
     display: flex;
     align-items: center;
+  }
+  .header-address {
+    font-size: 14px;
+    line-height: 1.142;
+  }
+  .header-address-svg-mail {
+    width: 16px;
+    height: 12px;
+  }
+  .header-address-svg-tel {
+    width: 10px;
+    height: 16px;
   }
   .header-address:not(:last-child) {
     margin-right: 30px;
@@ -372,32 +403,6 @@ a:visited {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (min-width: 480px) {
-  .work-list {
-    justify-content: center;
-  }
-  .work-list-item {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .work-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .work-list-item {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .work-list-item {
-    width: 370px;
-  }
-}
-
 .work-overlay {
   top: 0;
   left: 0;
@@ -426,6 +431,41 @@ a:visited {
   overflow: hidden;
   position: relative;
   height: 294px;
+}
+
+@media screen and (min-width: 480px) {
+  .work-list {
+    justify-content: center;
+  }
+  .work-list-item {
+    width: 450px;
+  }
+  .work-overlay {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .work-list-item {
+    width: 354px;
+  }
+  .work-overlay {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list-item {
+    width: 370px;
+  }
+  .work-overlay {
+    width: 370px;
+  }
 }
 
 .footer {
@@ -661,12 +701,17 @@ a:visited {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) {
-  .form-fild-label {
-    margin-right: 20px;
-  }
+@media screen and (min-width: 480px) {
   .form {
-    margin-left: 166px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

@@ -14,11 +14,6 @@
   }
 }
 
-// .header-btn-svg {
-//   &:hover {
-//     fill: #2196f3;
-//   }
-// }
 .header-btn .header-btn-close {
   display: none;
 }
@@ -32,12 +27,13 @@
 
 .header-address {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.02em;
 
   &-link {
     display: flex;
+    align-items: center;
     color: #757575;
   }
   &:not(:last-child) {
@@ -48,10 +44,15 @@
   &-link:focus {
     color: $accent-color;
   }
-  &:hover &-svg {
+  &:hover &-svg-mail {
     fill: #2196f3;
   }
-  &-svg {
+  &:hover &-svg-tel {
+    fill: #2196f3;
+  }
+
+  &-svg-mail,
+  &-svg-tel {
     margin-right: 8px;
   }
 }
@@ -59,11 +60,36 @@
   .header-address:not(:last-child) {
     margin-bottom: 16px;
   }
+  .header-address {
+    font-size: 18px;
+    line-height: 1.166;
+
+    &-link {
+      justify-content: center;
+    }
+    &-svg-tel {
+      width: 10px;
+      height: 15px;
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .address {
     display: flex;
     align-items: center;
+  }
+  .header-address {
+    font-size: 14px;
+    line-height: 1.142;
+
+    &-svg-mail {
+      width: 16px;
+      height: 12px;
+    }
+    &-svg-tel {
+      width: 10px;
+      height: 16px;
+    }
   }
   .header-address:not(:last-child) {
     margin-right: 30px;
